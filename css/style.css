@@ -75,6 +75,16 @@ a, button{
 	border: 1px solid #df3708;
 }
 
+.btn--blue {
+	background-color: #5585a2;
+	border: 1px solid #5585a2;
+}
+
+.btn--blue:hover {
+	background-color: #4bb7f8;
+	border: 1px solid #4bb7f8;
+}
+
 /* Info */
 
 .info--white {
@@ -93,20 +103,35 @@ a, button{
 	font-weight: 800;
 }
 
+.title--nomargin {
+	margin-bottom: 0;
+}
+
+.title--margin30 {
+	margin-bottom: 30px;
+}
+
 .info__text + .info__text {
 	margin-top: 10px;
 }
 
+.info__text--padd {
+	padding-bottom: 14px;
+}
+
 /* Grid */
 .container{
-	/*position: relative;*/
-    margin: 0 auto;
+	margin: 0 auto;
     padding: 0 15px;
     width: 100%;
     max-width: 1200px;
 }
 .row{
     margin: 0 -15px;
+}
+
+.row + .row {
+	margin-top: 30px;
 }
 
 .row:before,
@@ -116,8 +141,8 @@ a, button{
     clear: both;
 }
 
-[class^="col"],
-[class*="col"]{
+[class^="col-"],
+[class*="col-"]{
     float: left;
     padding: 0 15px;
 }
@@ -320,3 +345,72 @@ a, button{
 	padding-top: 99px; 
 }
 
+/* Slide-services */
+.slide-services {
+	background: #70bfff;
+	padding: 100px 0 151px; 
+}
+
+.slide-services__wpap-img {
+	position: relative;
+	padding-left: 125px;
+}
+
+.info--center-right {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.slide-services__btn {
+	margin-top: 0;
+	padding-left: 28px;
+	padding-right: 130px;
+	width: 400px;
+	height: 100px;
+	color:  #262626;
+    font-weight: 700;
+    border: none;
+	background: #fff;
+	background-position: 93% center;
+  	background-repeat: no-repeat;
+	text-transform: none;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.slide-services__btn:hover {
+	color: #fff;
+	border: 1px solid #3d8fd1;
+	background: #3d8fd1;
+
+}
+
+.slide-services__btn + .slide-services__btn {
+	margin-top: 20px;
+}
+
+.slide-services__btn:first-child {
+	margin-top: 79px;
+}
+
+.btn--shop {
+	background-image: url('../Img/shop.png');
+	background-position: 92% center; 	
+}
+.btn--product {
+	background-image: url('../Img/product.png'); 	
+}
+.btn--delivery {
+	background-image: url('../Img/delivery.png'); 	
+}
+.btn--organized {
+	background-image: url('../Img/Organized.png'); 	
+}
+
+/* Slide-gallery */
+.slide-gallery {
+	background: #ffe92f;
+	text-align: center;
+	padding: 89px 0 151px;
+}
